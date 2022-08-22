@@ -18,7 +18,7 @@
          background-color: #666666;
          }
 
-         #frame1 {
+         iframe {
 
          width: 824px;
          height: 1390px;
@@ -28,24 +28,6 @@
          -o-transform: scale(0.7766, 0.7766);
          -ms-transform: scale(0.7766, 0.7766);
          transform: scale(0.7766, 0.7766);
-
-         -moz-transform-origin: top left;
-         -webkit-transform-origin: top left;
-         -o-transform-origin: top left;
-         -ms-transform-origin: top left;
-         transform-origin: top left;
-         }
-
-         #frame2,#frame3 {
-
-         width: 914px;
-         height: 1542px;
-
-
-         -webkit-transform: scale(0.7, 0.7);
-         -o-transform: scale(0.7, 0.7);
-         -ms-transform: scale(0.7, 0.7);
-         transform: scale(0.7, 0.7);
 
          -moz-transform-origin: top left;
          -webkit-transform-origin: top left;
@@ -71,8 +53,8 @@
       <div>
          <div id="screenContent" style="visibility:hidden;">
             <iframe id="frame1" style="position: absolute; top:0; left: 0"                       src="https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
-            <iframe id="frame2" style="position: absolute; top:0; left: 640px; height: 1516px;"  src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
-            <iframe id="frame3" style="position: absolute; top:0; left: 1280px; height: 1532px;" src="https://intranet.tam.ch/krm/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame2" style="position: absolute; top:0; left: 640px; height: 1371px;"  src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame3" style="position: absolute; top:0; left: 1280px; height: 1380px;" src="https://intranet.tam.ch/krm/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
          </div>
       </div>
       <script type="text/javascript">
@@ -81,25 +63,18 @@
            document.getElementById('screenContent').style.visibility = 'visible';
          });
 
-         //refresh in milliseconds
-         refresh(3600000);
-         function refresh(timer) {
-           setTimeout(function () {
-               location.reload()
-           }, timer);
-         }
 
          //nw foyer2 fix 1f cut
          var frame2 = document.getElementById('frame2');
 
          frame2.addEventListener("load", function() {
-           frame2.style.height = "1542px";
+           frame2.style.height = "1390px";
          })
          //nw foyer3 fix u1 cut
          var frame3 = document.getElementById('frame3');
 
          frame3.addEventListener("load", function() {
-           frame3.style.height = "1542px";
+           frame3.style.height = "1390px";
          })
       </script>
    </body>
