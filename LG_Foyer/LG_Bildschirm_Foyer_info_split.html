@@ -34,14 +34,37 @@
          }
          #frame3 {
            background-color: #FFF;
-         width: 2560px;
-         height: 4305px;
+         width: 2561px;
+         height: 1617px;
          position: relative;
+         margin-left: -1px;
+
 
          -webkit-transform: scale(0.25, 0.25);
          -o-transform: scale(0.25, 0.25);
          -ms-transform: scale(0.25, 0.25);
-         transform: scale(0.252, 0.252) translate3d( 0, 0, 0);
+         transform: scale(0.25, 0.25);
+
+
+         -moz-transform-origin: top left;
+         -webkit-transform-origin: top left;
+         -o-transform-origin: top left;
+         -ms-transform-origin: top left;
+         transform-origin: top left;
+         }
+
+         #frame4 {
+           background-color: #FFF;
+         width: 2560px;
+         height: 4305px;
+         position: relative;
+         z-index: -1;
+         margin-left: -1px;
+
+         -webkit-transform: scale(0.25, 0.25);
+         -o-transform: scale(0.25, 0.25);
+         -ms-transform: scale(0.25, 0.25);
+         transform: scale(0.25, 0.25) translate3d( 0, 0, 0);
 
 
          -moz-transform-origin: top left;
@@ -70,6 +93,7 @@
             <iframe id="frame1" style="position: absolute; top:0; left: 0"      src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
             <iframe id="frame2" style="position: absolute; top:0; left: 640px;"  src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=tomorrow" frameborder="0" scrolling="no"></iframe>
             <iframe id="frame3" style="position: absolute; top:0; left: 1280px;" src="https://www.lgr.ch/infoscreen" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame4" style="position: absolute; top:0; left: 1280px;" src="https://www.lgr.ch/infoscreen" frameborder="0" scrolling="no"></iframe>
          </div>
       </div>
       <script>
